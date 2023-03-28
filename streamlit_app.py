@@ -31,7 +31,7 @@ def app():
     user_input = st.text_area('Paste a block of code', height=10)
 
     # Display the text when the user submits the form
-    if st.button('Submit')::
+    if st.button('Submit'):
         output = explain_code(user_input)
         st.write(output)
 
