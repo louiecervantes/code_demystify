@@ -8,7 +8,7 @@ openai.api_key = st.secrets["API_key"]
 
 def explain_code(input_string): 
     response = openai.Completion.create(
-        engine="gpt-3.5-turbo",  #text-davinci-003
+        engine="text-davinci-003", 
         prompt="Explain this code: " + input_string +"\n",
         max_tokens=1024,
         top_p=1.0,
